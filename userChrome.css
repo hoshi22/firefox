@@ -1,0 +1,32 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+:root {
+  /* --tabbar-bg-color: #d7dbdd; */
+   /* --tabbar-bg-color: #cacfd2; */
+   --tabbar-bg-color: #bdc3c7;
+}
+
+/* Bigger paddings for bookmarks toolbar, lesser font size */
+#PlacesToolbarItems .bookmark-item {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  font-size: 12px !important;
+  font-family: 'Roboto';
+}
+
+/* Active tab styles */
+.tab-line[selected="true"] {
+  background-color: #f5f6f7 !important; /* this sets the color of the line above the tab */
+}
+.tabbrowser-tab {
+  /* background-color:  #ccd1d1 !important; */
+  background-color:  var(--tabbar-bg-color) !important;
+  /* opacity: 0.5 !important; */
+}
+toolbar#TabsToolbar
+{
+    -moz-appearance: none !important;
+    background-color: var(--tabbar-bg-color) !important;
+}
+
+/* ******************************************************************* */
