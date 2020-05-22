@@ -1,30 +1,37 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 :root {
-  /* --tabbar-bg-color: #d7dbdd; */
-   /* --tabbar-bg-color: #cacfd2; */
-   --tabbar-bg-color: #bdc3c7;
+   --tabbar-bg-color: #eaeded;
+   --tab-toolbar-navbar-overlap: 0px !important;
+   --space-above-tabbar: 2px !important;
 }
 
-/* Bigger paddings for bookmarks toolbar, lesser font size */
+.tab-line[selected="true"] {
+  height: 1px !important;
+  background-color: black !important;
+}
+.tabbrowser-tab {
+  background-color:  var(--tabbar-bg-color) !important;
+}
+
 #PlacesToolbarItems .bookmark-item {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
-  font-size: 12px !important;
-  font-family: 'Roboto';
+  font-size: 13px !important;
+  font-family: "Roboto";
 }
-
-/* Active tab styles */
-.tab-line[selected="true"] {
-  background-color: #f5f6f7 !important; /* this sets the color of the line above the tab */
-}
-.tabbrowser-tab {
-  /* background-color:  #ccd1d1 !important; */
-  background-color:  var(--tabbar-bg-color) !important;
-  /* opacity: 0.5 !important; */
-}
-toolbar#TabsToolbar
-{
+toolbar#TabsToolbar {
     -moz-appearance: none !important;
     background-color: var(--tabbar-bg-color) !important;
 }
+#urlbar {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+/* .tabbrowser-tab:not([pinned]) {
+  max-width: 250px !important;
+  min-width: 40px !important;
+}
+
+/* ******************************************************************* */
