@@ -6,10 +6,11 @@
    --space-above-tabbar: 2px !important;
 }
 
+/* Hide the stripe on active tab */
 .tab-line[selected="true"] {
-  height: 1px !important;
-  background-color: black !important;
+  opacity: 0 !important;
 }
+
 .tabbrowser-tab {
   background-color:  var(--tabbar-bg-color) !important;
 }
@@ -34,4 +35,4 @@ toolbar#TabsToolbar {
   min-width: 40px !important;
 }
 
-/* ******************************************************************* */
+*******************************************************************
