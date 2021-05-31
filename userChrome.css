@@ -1,38 +1,23 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-:root {
-   --tabbar-bg-color: #eaeded;
-   --tab-toolbar-navbar-overlap: 0px !important;
-   --space-above-tabbar: 2px !important;
-}
-
-/* Hide the stripe on active tab */
-.tab-line[selected="true"] {
-  opacity: 0 !important;
-}
-
-.tabbrowser-tab {
-  background-color:  var(--tabbar-bg-color) !important;
-}
-
+/* Bookmarks toolbar tuning */
 #PlacesToolbarItems .bookmark-item {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
-  font-size: 13px !important;
-  font-family: "Roboto";
+  font-size: 13.2px !important;
+  font-family: "Roboto" !important;
 }
-toolbar#TabsToolbar {
-    -moz-appearance: none !important;
-    background-color: var(--tabbar-bg-color) !important;
+#PlacesToolbarItems .bookmark-item :hover {
+  background-color: #a6acaf !important;
+  -moz-appearance: none !important;
 }
+#navigator-toolbox > toolbar:not(#TabsToolbar):not(#toolbar-menubar) menupopup[placespopup] {
+  -moz-appearance: none !important;
+  background-color: #f8f8fa !important;
+}
+
+/* Urlbar tuning */
 #urlbar {
   margin-top: 4px !important;
   margin-bottom: 4px !important;
 }
-
-/* .tabbrowser-tab:not([pinned]) {
-  max-width: 250px !important;
-  min-width: 40px !important;
-}
-
-*******************************************************************
