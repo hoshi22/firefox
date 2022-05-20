@@ -1,0 +1,18 @@
+
+@-moz-document url-prefix("moz-extension://2fab7246-42a0-aa4e-8a14-588e848166f9") {
+	* {	
+    font-size: 18px !important;
+    font-family: Fira Sans !important;	
+	  background-color: #161a27 !important;	
+	  color: #ffffff !important;	
+  }
+}
+
+@-moz-document url-prefix("moz-extension://038780df-da1a-1645-b2a7-eb0499de33ac") {
+	* {	
+    font-size: 18px !important;
+    font-family: Fira Sans !important;	
+  	background-color: #161a27 !important;	
+	  color: #ffffff !important;	
+  }
+}
