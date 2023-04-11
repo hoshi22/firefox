@@ -1,20 +1,56 @@
+/** Import Lepton stylesheet (Chrome) *****************************************/
+@import url("css/leptonChrome.css");
+
+
+/** Add your custom styles below **********************************************/
 /* Tabs customizations */
 tab {
-  /* font-size: 16px !important; */
-  font-family: "Roboto" !important;
-  padding: 1px !important;
+    font-family: "Roboto" !important;
+    padding: 1px !important;
+  }
+  
+  /* Bookmarks toolbar tuning */
+  #PlacesToolbarItems .bookmark-item {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    font-size: 13.4px !important;
+    font-family: "Roboto" !important;
+  }
+  
+  /* Urlbar tuning */
+  #urlbar {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+  }
+  
+  #TabsToolbar { 
+    /* margin-top: -3px !important; */
+    /* margin-bottom: -3px !important; */
+  }
+  
+  #PlacesToolbarItems {
+    display: flex !important;
+    justify-content: center !important; 
+    border-image: linear-gradient(to top, var(--general-color) 20%, transparent 50%) 1 !important;
+  }
+  
+/* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */
+
+#editBMPanel_locationRow {
+  visibility: visible !important;
 }
 
-/* Bookmarks toolbar tuning */
-#PlacesToolbarItems .bookmark-item {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
-  font-size: 14px !important;
-  font-family: "Roboto" !important;
-}
-
-/* Urlbar tuning */
-#urlbar {
-  margin-top: 4px !important;
-  margin-bottom: 4px !important;
-}
+/* Removing top line of active tab */
+#TabsToolbar {
+  --lwt-tab-line-color: #516785 !important;
+ }
+ 
+/* Disable Email Image/Audio/Video and Set as Desktop Background context menu items */
+/*
+ * #context-sendimage,
+ * #context-sendvideo,
+ * #context-sendaudio,
+ * #context-setDesktopBackground {
+ *   display: none !important;
+ * }
+*/
