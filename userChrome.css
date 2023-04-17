@@ -24,10 +24,12 @@ tab {
   }
   
   #TabsToolbar { 
-    /* margin-top: -3px !important; */
-    /* margin-bottom: -3px !important; */
+    /* margin-top: 20px !important; */
+    /* margin-bottom: 1px !important; */
+    --lwt-tab-line-color: transparent !important; /* Removing top line of active tab */
+    --toolbarseparator-color: var(--sidebar-background-color) !important;
   }
-  
+
   #PlacesToolbarItems {
     display: flex !important;
     justify-content: center !important; 
@@ -40,11 +42,15 @@ tab {
   visibility: visible !important;
 }
 
-/* Removing top line of active tab */
-#TabsToolbar {
-  --lwt-tab-line-color: #516785 !important;
- }
- 
+/* Removing top border of toolbar panel */
+#nav-bar {
+	box-shadow: none !important;
+}
+
+/* #TabsToolbar {
+  --tab-line-color: transparent !important;
+ } */
+
 /* Disable Email Image/Audio/Video and Set as Desktop Background context menu items */
 /*
  * #context-sendimage,
