@@ -9,32 +9,37 @@ tab {
     padding: 1px !important;
   }
   
-  /* Bookmarks toolbar tuning */
-  #PlacesToolbarItems .bookmark-item {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    font-size: 13.4px !important;
-    font-family: "Roboto" !important;
-  }
-  
-  /* Urlbar tuning */
-  #urlbar {
-    margin-top: 2px !important;
-    margin-bottom: 2px !important;
-  }
-  
-  #TabsToolbar { 
-    /* margin-top: 20px !important; */
-    /* margin-bottom: 1px !important; */
-    --lwt-tab-line-color: transparent !important; /* Removing top line of active tab */
-    --toolbarseparator-color: var(--sidebar-background-color) !important;
-  }
+/* Free space above tabs */
+#tabbrowser-tabs {
+  margin-top: 4px !important
+}
 
-  #PlacesToolbarItems {
-    display: flex !important;
-    justify-content: center !important; 
-    border-image: linear-gradient(to top, var(--general-color) 20%, transparent 50%) 1 !important;
-  }
+/* Bookmarks toolbar tuning */
+#PlacesToolbarItems .bookmark-item {
+padding-top: 4px !important;
+padding-bottom: 4px !important;
+font-size: 13.4px !important;
+font-family: "Roboto" !important;
+}
+
+/* Urlbar tuning */
+#urlbar {
+margin-top: 2px !important;
+margin-bottom: 2px !important;
+}
+
+#TabsToolbar { 
+/* margin-top: 20px !important; */
+/* margin-bottom: 1px !important; */
+--lwt-tab-line-color: transparent !important; /* Removing top line of active tab */
+--toolbarseparator-color: var(--sidebar-background-color) !important;
+}
+
+#PlacesToolbarItems {
+display: flex !important;
+justify-content: center !important; 
+border-image: linear-gradient(to top, var(--general-color) 20%, transparent 50%) 1 !important;
+}
   
 /* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */
 
