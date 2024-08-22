@@ -1,0 +1,19 @@
+tab {
+    font-family: "Roboto" !important;
+}
+
+#PlacesToolbarItems .bookmark-item {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    font-size: 13.4px !important;
+    font-family: "Roboto" !important;
+}
+
+.toolbaritem-combined-buttons {
+    filter: grayscale(100%) !important;
+}
+
+#PlacesToolbarItems {
+    display: flex !important;
+    justify-content: center !important;
+}
