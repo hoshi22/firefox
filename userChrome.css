@@ -37,10 +37,16 @@ toolbar {
 }
 
 
-/* Urlbar tuning */
+/* Buttons and urlbar margins */
+.toolbarbutton-1 {
+    margin-top: 4px !important;
+}
 #urlbar {
-  margin-top: 2px !important;
-  margin-bottom: 2px !important;
+    margin-top: 4px !important;
+}
+.toolbaritem-combined-buttons {
+    /* filter: grayscale(100%) !important; */
+    margin-top: 4px !important;
 }
 
 /* #TabsToolbar { 
