@@ -1,3 +1,23 @@
+/* Tabs customizations */
+/* tab {
+    font-family: "Roboto" !important;
+    padding: 1px !important;
+  }
+:root {
+  --tab-toolbar-navbar-overlap: 0px !important;
+  --tab-min-height: 28px !important;
+ }
+ :root #tabbrowser-tabs {
+  --tab-min-height: 28px !important;
+ } */
+
+/* Free space above tabs */
+/* #tabbrowser-tabs {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  padding: none !important;
+} */
+
 /* Bookmarks toolbar tuning */
 #PlacesToolbarItems .bookmark-item {
   padding-top: 4px !important;
@@ -15,22 +35,22 @@
   clip-path: inset(0) !important;
 }
 
-/* Disable bookmarks toolbar bottom border */
 #toolbar
+
+/* Disable bookmarks toolbar bottom border */
 menubar,
 toolbox,
 toolbar {
   border: none !important;
 }
 
+
 /* Urlbar tuning */
 #urlbar {
   margin-top: 2px !important;
   margin-bottom: 2px !important;
-}
-
-#urlbar-background {
-  border: 1px solid #cacfd2 !important;
+  border: 1px solid #C6C7C8 !important;
+  border-radius: 6px !important;
 }
 
 /* Buttons and urlbar margins */
@@ -45,6 +65,28 @@ toolbar {
   margin-bottom: 2px !important;
 }
 
+
+
+/* #TabsToolbar { 
+  margin-top: 20px !important;
+  margin-bottom: 1px !important;
+  --lwt-tab-line-color: transparent !important;
+  --toolbarseparator-color: var(--sidebar-background-color) !important;
+} */
+
 #PlacesToolbarItems {
+  /* display: flex !important; */
   justify-content: center !important;
+  /* border-image: linear-gradient(to top, var(--general-color) 20%, transparent 50%) 1 !important; */
 }
+
+/* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */
+
+/* #editBMPanel_locationRow {
+  visibility: visible !important;
+} */
+
+/* Removing top border of toolbar panel */
+/* #nav-bar {
+	box-shadow: none !important;
+} */
